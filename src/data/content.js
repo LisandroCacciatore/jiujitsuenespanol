@@ -397,8 +397,8 @@ export const FOOTER = {
     { label: 'FAQ', href: '#faq' },
   ],
   legal: [
-    { label: 'Términos y condiciones', href: '/terminos.html' },
-    { label: 'Política de privacidad', href: '/privacidad.html' },
+    { label: 'Términos y condiciones', href: `${import.meta.env.BASE_URL}terminos.html` },
+    { label: 'Política de privacidad', href: `${import.meta.env.BASE_URL}privacidad.html` },
     { label: 'Defensa del Consumidor', href: 'https://www.argentina.gob.ar/produccion/defensadelconsumidor' },
   ],
 }

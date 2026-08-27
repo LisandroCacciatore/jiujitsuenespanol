@@ -114,7 +114,7 @@ export const BADGES = [
 
 export const HERO = {
   kicker: 'Entreno en Kingsway, Austin, bajo John Danaher. Compito en ADCC.',
-  title: 'El jiu-jitsu que se enseña en Austin, explicado en tu idioma',
+  title: 'Los sistemas de Danaher en español. 118 videos, acceso inmediato.',
   subtitle:
     'Los mismos sistemas que uso para competir a nivel internacional, desarmados paso a paso en español. Sin traducciones de tercera mano, sin subtítulos automáticos.',
   primaryCta: 'Ver 3 videos gratis — sin registro',

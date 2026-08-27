@@ -10,7 +10,7 @@ export default function StickyCta() {
 
   useEffect(() => {
     const onScroll = () => {
-      setVisible(window.scrollY > 800)
+      setVisible(window.scrollY > 400)
     }
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)

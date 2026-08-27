@@ -1,10 +1,11 @@
 import Button from './ui/Button'
 import SmartImg from './ui/SmartImg'
-import { BADGES, HERO, PHOTOS } from '../data/content'
+import { BADGES, HERO, PHOTOS, TESTIMONIALS } from '../data/content'
 import { useVideo } from '../context/VideoContext'
 
 export default function Hero() {
   const { open } = useVideo()
+  const heroTestimonial = TESTIMONIALS.items[0]
 
   return (
     <section id="inicio" className="hero-glow relative overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-24">
@@ -33,7 +34,11 @@ export default function Hero() {
             </Button>
           </div>
 
-          <ul className="mt-8 flex flex-wrap gap-2">
+          <p className="mt-3 text-xs text-gold-400/50">
+            Sin registro · Sin tarjeta · 3 videos completos
+          </p>
+
+          <ul className="mt-6 flex flex-wrap gap-2">
             {BADGES.map((badge) => (
               <li
                 key={badge}
@@ -43,6 +48,22 @@ export default function Hero() {
               </li>
             ))}
           </ul>
+
+          <div className="mt-6 flex items-center gap-3 rounded-xl border border-white/5 bg-ink-800/50 px-4 py-3 max-w-md">
+            <img
+              src={PHOTOS.testimonials[heroTestimonial.photoKey].url}
+              alt={heroTestimonial.name}
+              className="h-10 w-10 rounded-full object-cover ring-2 ring-accent/40"
+            />
+            <div className="min-w-0">
+              <p className="text-sm text-gold-400/90 leading-snug italic">
+                "{heroTestimonial.quote.length > 80 ? heroTestimonial.quote.slice(0, 80) + '…' : heroTestimonial.quote}"
+              </p>
+              <p className="mt-0.5 text-xs text-gold-400/50 font-medium">
+                {heroTestimonial.name} — {heroTestimonial.role}
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="relative">

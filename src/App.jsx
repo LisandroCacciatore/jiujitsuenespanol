@@ -39,6 +39,7 @@ export default function App() {
             <TrainingQuiz />
             <FreeVideos />
             <TwoWays />
+            <Faq />
             <ComparisonSection />
             <Highlights />
             <About />
@@ -49,7 +50,6 @@ export default function App() {
             <LeadCapture />
             <InstagramCta />
             <Blog />
-            <Faq />
             <FinalCta />
           </main>
           <Footer />
